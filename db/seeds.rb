@@ -1,3 +1,4 @@
+# coding: utf-8
 nb_de_user = 120
 nb_d_item = 200
 nb_de_cart = 120
@@ -7,7 +8,7 @@ require 'faker'
 
 nb_d_item.times do |i|
   Item.create(
-    title: Faker::Dog.breed,
+    title: Faker::Movie.quote,
     description: Faker::Movie.quote,
     price: "#{rand(1..400)},#{rand(0..99)}",
     image_url: "chaton#{i}.jpg"

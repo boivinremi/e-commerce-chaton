@@ -10,7 +10,7 @@ class CartsController < ApplicationController
         i.destroy
       end
     end
-    redirect_to 'carts_path(1)'
+    redirect_to carts_path(1)
   end
 
   def new

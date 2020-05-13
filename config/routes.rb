@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resources :carts, except: [:destroy] do
     get 'pay/:money', action: 'pay', as: 'payment'
-    get 'item/:item_id', action: 'edit', as: 'edit'
+    get '/edit/:item_id', action: 'edit', as: 'edit'
   end
 
   # get '/carts/edit/:id_item_to_del', to: 'carts#edit'
