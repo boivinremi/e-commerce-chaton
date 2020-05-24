@@ -1,11 +1,12 @@
 class Item < ApplicationRecord
+  # Validations
   validates :title, presence: true, uniqueness: true
   validates :description, presence: true
   validates :price, presence: true
-  validates :image_url, uniqueness: true
+  validates :image, presence: true
 
-	# has_and_belongs_to_many :carts
-
-	has_many :stores
-	has_many :carts, through: :stores
+  # associations
+  has_many :stores
+  has_many :carts, through: :stores
+  has_one_attached :image
 end
