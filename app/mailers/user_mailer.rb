@@ -1,16 +1,15 @@
 require 'mailjet'
-
 class UserMailer < ApplicationMailer
 
   def contact
     variable = Mailjet::Send.create(messages: [{
       'From'=> {
-        'Email'=> 'remi.boivin@opsone.net',
+        'Email'=> 'remi.boivin@epitech.eu',
         'Name'=> 'Mailjet Pilot'
       },
       'To'=> [
         {
-          'Email'=> 'remi.boivin@epitech.eu',
+          'Email'=> 'remi50avJ.C@live.fr',
           'Name'=> 'test'
         }
       ],

@@ -1,0 +1,6 @@
+fr:
+  admin:
+       name: Dashboard admin
+       items: Articles
+       sales: Ventes
+       users: Utilisateurs

@@ -1,5 +1,4 @@
-class StaticPagesController < ApplicationController
-  check_authorization
+class HomeController < ApplicationController
   def home
     @all = Item.all
 

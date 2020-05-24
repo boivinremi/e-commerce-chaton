@@ -1,5 +1,4 @@
 class ItemsController < ApplicationController
-
   def index
   end
 
@@ -11,9 +10,7 @@ class ItemsController < ApplicationController
     @id_item = params[:item_id].to_i
     @item = Item.find(@id_item)
 
-    mon_ajout = Store.new(cart_id: Cart.find_by(user_id: current_user.id).id, item_id: @item.id)
-    mon_ajout.save
+    Store.create(cart_id: Cart.find_by(user_id: current_user.id).id, item_id: @item.id)
     redirect_to root_path
   end
-
 end
