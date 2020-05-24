@@ -17,10 +17,14 @@ nb_d_item.times do |i|
 end
 
 puts "--- Création de l'admin ---"
-User.create(last_name: 'jojo', first_name: 'jojo', email: 'jojo@jojo.fr', password: 'jeteste', admin: true)
+User.create(
+	email: "jojo@jojo.fr",
+	password: 'jeteste',
+	admin: true
+)
 
 nb_de_user.times do |i|
-  User.create(last_name: Faker::Name.last_name, first_name: Faker::Name.first_name, email: Faker::Internet.email, password: 'test_that')
+  User.create(email: Faker::Internet.email, password: 'test_that')
   puts "Création de l'User N°#{i}."
 end
 
