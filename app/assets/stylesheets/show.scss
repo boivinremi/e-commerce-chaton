@@ -1,3 +1,6 @@
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
 .btn-suppr {
 	background-color: #BDBDBD;
 	color: #F2F2F2;
@@ -12,26 +15,21 @@
 	color: #FFE6E6;
 }
 
-.info-cart {
-	margin-left: 10%;
-	margin-bottom: 10px;
+.container {
+	position: relative;
 }
 
 .info-cart span {
 	font-weight: bold;
 }
 
-ul {
-	list-style-type: none;
-	position: relative;
+.info-cart {
+	margin-left: 10%;
+	margin-bottom: 10px;
 }
 
 .wrapper {
 	margin-top: 5%;
-}
-
-.container {
-	position: relative;
 }
 
 h2.total {
@@ -39,4 +37,8 @@ h2.total {
 	background-color: #EDEDED;
 	color: #5E5E5E;
 	padding: 8px 7px;
+}
+ul {
+	list-style-type: none;
+	position: relative;
 }

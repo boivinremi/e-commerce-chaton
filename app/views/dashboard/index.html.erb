@@ -5,47 +5,59 @@
 	<div class="collapse navbar-collapse">
 	  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
 	  <div class="row">
-	    <div class="col" style='margin-left:-1vw;'>
-	      <%= image_tag '/cat-logo.jpg', style: 'width:4vw !important;' %>
+	    <div class="col">
+	      <%= image_tag '/cat-logo.jpg', class: 'logo-admin'%>
 	    </div>
-	    <div class="col-6" style='margin-left:-4vw;'>
-	      <%= link_to t('admin.name') %>
+	    <div class="col-6">
+	      <p><%= t('admin.name')%> </p>
 	    </div>
 	  </div>
 	  </ul>
 	</div>
       </nav>
       <ul>
-	<li class="nav-item">
-	  <div class="row">
-	    <div class="col">
-	      <%= image_tag 'avatar.jpg', style: 'width:4vw !important;' %>
-	    </div>
-	    <div class="col-6">
-	      <%= @user %>
-	    </div>
-	  </div>
+	<hr class="sep">
+	<li class="nav-item name">
+	  <%= image_tag 'avatar.jpg', class: 'avatar' %>
+	  <p><%= "#{@user.last_name} #{@user.first_name}"  %></p>
 	</li>
-	<li class="nav-item">
-	  <%= link_to t('admin.items') %>
+	<li class="cat nav-item">
+	  <p><%= t('admin.items') %></p>
 	</li>
-	<li class="nav-item">
-	  <%= link_to t('admin.sales') %>
+	<li class="cat nav-item">
+	  <p><%= t('admin.sales') %></p>
 	</li>
-	<li class="nav-item">
-	  <%= link_to t('admin.users') %>
+	<li class="cat nav-item">
+	  <p><%= t('admin.users') %></p>
 	</li>
       </ul>
     </aside>
-    <main class="col" style='margin-top:10vw;margin-left:2vw;'>
+    <main class="col">
       <div class='row'>
-	<div class="col" style='box-shadow: 1px 1px 1px 3px #dadada;line-height:24px;'>
-	  <%= image_tag 'avatar.jpg', style: 'width:4vw !important;' %>
+	<div class="col order">
+	  <p><b>150</b></p>
+	  <p style="margin-top:-0.4vw;"><%= t('admin.count-order') %></p>
+	  <div>
+	    <center><%= link_to t 'admin.more', class: 'more' %></center>
+	  </div>
 	</div>
-	<div class="col-6">
-	  2 of 3 (wider)
+	<div class="col count-registrations">
+	  <p><%=  t('admin.count-registration') %></p>
+	</div>
+	<div class="col count-visitors">
+	  <p><%=  t('admin.count-visitor') %></p>
+	</div>
+      </div>
+      <div class="row line-2">
+	<div class="col">
+	  <p><%= t('admin.messages.title') %></p>
+	  <hr>
+	</div>
+	<div class="col-5">
+	  <p><%= t('admin.todo-list.title') %></p>
+	  <hr>
 	</div>
       </div>
     </main>
   </div>
-</div>-->
+</div>
