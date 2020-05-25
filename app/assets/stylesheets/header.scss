@@ -1,0 +1,38 @@
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn {
+	margin-top: 5%;
+	margin-left: 2px;
+	height: 45px;
+}
+
+.link-navbar {
+	margin-left: 10px;
+}
+
+.nav-item {
+	display: flex;
+}
+.navbar {
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+}
+
+a.link-navbar {
+	color: black;
+}
+
+a.link-navbar:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+img.basket-icon {
+	height: 60px;
+}
+
+img.logo {
+	height: 4vw;
+	width: auto;
+}

@@ -1,0 +1,63 @@
+<div class="container-fluid h-100 fixed-top" style='background-color:#f1f1f1;'>
+  <div class="row h-100">
+    <aside class="col-12 col-md-2 p-0 bg-dark">
+      <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
+	<div class="collapse navbar-collapse">
+	  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+	  <div class="row">
+	    <div class="col">
+	      <%= image_tag '/cat-logo.jpg', class: 'logo-admin'%>
+	    </div>
+	    <div class="col-6">
+	      <p><%= t('admin.name')%> </p>
+	    </div>
+	  </div>
+	  </ul>
+	</div>
+      </nav>
+      <ul>
+	<hr class="sep">
+	<li class="nav-item name">
+	  <%= image_tag 'avatar.jpg', class: 'avatar' %>
+	  <p><%= "#{@user.last_name} #{@user.first_name}"  %></p>
+	</li>
+	<li class="cat nav-item">
+	  <p><%= t('admin.items') %></p>
+	</li>
+	<li class="cat nav-item">
+	  <p><%= t('admin.sales') %></p>
+	</li>
+	<li class="cat nav-item">
+	  <p><%= t('admin.users') %></p>
+	</li>
+      </ul>
+    </aside>
+    <main class="col">
+      <div class='row'>
+	<div class="col order">
+	  <p><b>150</b></p>
+	  <p style="margin-top:-0.4vw;"><%= t('admin.count-order') %></p>
+	  <div>
+	    <center><%= link_to t 'admin.more', class: 'more' %></center>
+	  </div>
+	</div>
+	<div class="col count-registrations">
+	  <p><%=  t('admin.count-registration') %></p>
+	</div>
+	<div class="col count-visitors">
+	  <p><%=  t('admin.count-visitor') %></p>
+	</div>
+      </div>
+      <div class="row line-2">
+	<div class="col">
+	  <p><%= t('admin.messages.title') %></p>
+	  <hr>
+	</div>
+	<div class="col-5">
+	  <p><%= t('admin.todo-list.title') %></p>
+	  <hr>
+	</div>
+      </div>
+    </main>
+  </div>
+</div>

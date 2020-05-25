@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  skip_authorize_resource :only => :pay
   def index
   end
 
