@@ -2,7 +2,7 @@
   "name": "e-commerce",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "braces": "^3.0.2",
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
